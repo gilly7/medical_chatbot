@@ -11,7 +11,7 @@ class GeminiService {
       throw Exception('Gemini API key not found in .env');
     }
     model = GenerativeModel(
-      model: 'gemini-1.5-pro',
+      model: 'gemini-1.5-flash',
       apiKey: apiKey,
       systemInstruction: Content.text(
         'You are a medical assistant. Provide accurate, general health advice but clarify you are not a doctor.',
